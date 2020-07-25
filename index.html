@@ -1,23 +1,45 @@
-<!-- 이 문서가 html 문서임을 알림 -->
 <!DOCTYPE html>
 <html lang="kr">
   <head>
-    <link
-      rel="shortcut icon"
-      href="고상한편지.jpg"
-      sizes="16x16 32x32 64x64"
-    />
-    <meta charset="utf-8" />
-    <!-- 검색했을 때 아래에 나오는 설명 -->
-    <meta name="author" content="고상한 편지" />
-    <meta name="description" content="고상한 편지에 온 걸 환영해" />
-    <!-- head는 브라우저에게 필요할 정보를 제공할 뿐 보이지 않는다. -->
-    <title>고상한 편지</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고상한 편지에 온 걸 환영해.</title>
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service </span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <img src="고상한편지.jpg" id="main-logo" />
+      <h1 class="welcome-header__title">고상한 편지에 온 걸 환영해.</h1>
+      <p class="welcome-header__text">
+        고상한 편지 회원이라면<br />아래 창을 통해 로그인 해 줘.
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="이메일 주소 혹은 닉네임" />
+      <input type="password" placeholder="비밀번호" />
+      <input type="submit" value="로그인" />
+      <a href="#">아이디 혹은 비밀번호 찾기</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/869157ca9f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
