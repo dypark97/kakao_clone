@@ -1,7 +1,5 @@
-a {
+div {
+  height: 300px;
+  width: 150px;
   color: #e44b4b;
-}
-#MainLogo {
-  width: 20%;
-  height: 20%;
 }
