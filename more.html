@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>고상한 편지 친구</title>
+    <title>고상한 편지 더 보기</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,23 +23,19 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">친구</h1>
+      <h1 class="screen-header__title">더 보기</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span>   <i class="fas fa-cog fa-lg screen-header-link">
-          <span class="screen-header-notification"></span>
-        </i></span>
+        <span
+          ><a href="settings.html">
+            <i class="fas fa-cog fa-lg screen-header-link">
+              <span class="screen-header-notification"></span> </i></a
+        ></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friend's Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -48,31 +44,46 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">고상한 편지</h4>
-            <!-- <h6 class="user-component__subtitle">상태 메시지를 입력해줘.</h6> -->
+            <span class="user-component__sub">
+              <h6 class="user-component__subtitle">010-xxxx-xxxx</h6>
+              <span class="user-component__alert">!</span>
+            </span>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>채널</span><i class="fas fa-chevron-up fa-xs"></i>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-calendar"></i>
+          <span>캘린더</span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="고상한편지.jpg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                채널
-              </h4>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>드라이브</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-smile"></i> <span>이모티콘</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-file-signature"></i> <span>테마</span>
+        </div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">추천</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">카카오스토리</span>
           </div>
-          <div class="user-component__column">
-          <div>  <span>2</span>
-            <i class="fas fa-chevron-right fa-xs"></i>
-            
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">카카오스토리</span>
           </div>
         </div>
       </div>
@@ -82,7 +93,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i>
+            ><i class="far fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -104,13 +115,10 @@
         </li>
       </ul>
     </nav>
-<div id="splash-screen">
-  <i class="fas fa-comment"></i>
-</div>
 
-<div id="no-mobile">
-  <span>화면 크기를 줄여주세요.</span>
-</div>
+    <div id="no-mobile">
+      <span>화면 크기를 줄여주세요.</span>
+    </div>
     <script
       src="https://kit.fontawesome.com/869157ca9f.js"
       crossorigin="anonymous"
